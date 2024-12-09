@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SpotCheck</h1>
+        <div id="search">
+            <div id="searchBarAndButton">
+                <input type="string" id="searchInput" placeholder="..." />
+                <button id="sendSearchButton">Search!</button>
+            </div>
+            <div class="radioButtons">
+                <input type="radio" id="tracks" name="query_type" value="tracks" checked>
+                <label for="tracks">Tracks</label>
+                <input type="radio" id="albums" name="query_type" value="albums">
+                <label for="albums">Albums</label>
+                <input type="radio" id="artists" name="query_type" value="artists">
+                <label for="artists">Artists</label>
+            </div>
+        </div>
+        <div id="spotify-container">
+        </div>
+        <div id="youtube-data"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
