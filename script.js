@@ -87,7 +87,7 @@ async function getTrackDataSpotify(searchTerm, queryType)
       
             //Creating a paragraph for the duration. The duration is given in milliseconds, so it is sent to another function to be displayed as minutes and seconds
             const duration = document.createElement('p');
-            albumTitle.innerHTML = '<strong>Duration: </strong>' + millisecondsToMinutesAndSeconds(parseInt(song.data.duration.totalMilliseconds));
+            duration.innerHTML = '<strong>Duration: </strong>' + millisecondsToMinutesAndSeconds(parseInt(song.data.duration.totalMilliseconds));
             const releaseDate = document.createElement('p');
 
             
